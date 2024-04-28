@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #4c4747;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Bungee Shade", sans-serif;
+  font-weight: 600;
+}
+
+.calculator {
+  height: auto;
+  max-width: 400px;
+  border-radius: 8px;
+  background-color: #00000080;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.output {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-bottom: 20px;
+  padding: 1rem;
+}
+
+.display {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.result {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  font-family: "Bungee Shade", sans-serif;
+}
+
+button {
+  font-size: 24px;
+  min-width: 80px;
+  min-height: 65px;
+  border: none;
+  border-radius: 8px;
+  background-color: #646464;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, transform 0.1s;
+  font-family: "Bungee Shade", sans-serif;
+}
+
+button:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button.operator {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+button.operator:hover {
+  background-color: #e74c3c;
+}
+
+button.operator:active {
+  transform: scale(0.95);
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Finger Paint", sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+a {
+ text-decoration: none;
+ color: #fff;
+}
+
+a:hover{
+  color: #000;
+}
+
+.logo{
+  height: 100px;
+  width: 100px;
+}
